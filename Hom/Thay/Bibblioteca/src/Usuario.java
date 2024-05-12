@@ -10,6 +10,10 @@ public class Usuario {
     String senha;
 
     //Construtor
+
+    public Usuario() {
+    }
+
     public Usuario(int id, String cpf, String nome, Date nascimento, String genero, String login, String senha) {
         this.id = id;
         this.cpf = cpf;
