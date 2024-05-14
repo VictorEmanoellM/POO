@@ -1,20 +1,18 @@
 import java.util.Date;
 
-public class Usuario {
-    int id;
-    String cpf;
-    String nome;
-    Date nascimento;
-    String genero;
-    String login;
-    String senha;
+abstract class Usuario {
+    private int id;
+    private String cpf;
+    private String nome;
+    private Date nascimento;
+    private String genero;
+    private String login;
+    private String senha;
+    Boolean acesso_sistema;
 
     //Construtor
-
-    public Usuario() {
-    }
-
-    public Usuario(int id, String cpf, String nome, Date nascimento, String genero, String login, String senha) {
+    public Usuario(int id, String cpf, String nome, Date nascimento, String genero, String login,
+                   String senha, Boolean acesso_sistema) {
         this.id = id;
         this.cpf = cpf;
         this.nome = nome;
@@ -22,6 +20,7 @@ public class Usuario {
         this.genero = genero;
         this.login = login;
         this.senha = senha;
+        this.acesso_sistema = acesso_sistema;
     }
 
     //Getter & setter
@@ -79,5 +78,13 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public Boolean getAcesso_sistema() {
+        return acesso_sistema;
+    }
+
+    public void setAcesso_sistema(Boolean acesso_sistema) {
+        this.acesso_sistema = acesso_sistema;
     }
 }
