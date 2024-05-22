@@ -11,4 +11,9 @@ public class ExcluirLivros {
         this.acervo = acervo;
     }
 
+    // Criação do método de excluir livro do acervo pelo ISBN
+    public void excluirLivro(String isbn) {
+        acervo.excluirLivro(isbn);
+    }
+
 }
