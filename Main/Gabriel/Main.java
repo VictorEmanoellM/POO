@@ -43,7 +43,7 @@ public class Main {
         List<Livro> livros = consultarLivros.consultarLivros();
         for (Livro livro : livros) {
             System.out.println(livro);
-        }
+        
 
         System.out.println("excluindo um livro...");
         excluindoLivros.excluinLivros("12345"); 
@@ -52,5 +52,7 @@ public class Main {
         livros = consultarLivros.consultarLivros();
         for (Livro livro : livros) {
             System.out.println(livro);
+
+            }
         }
 }
