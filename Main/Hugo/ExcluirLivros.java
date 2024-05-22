@@ -6,4 +6,9 @@ public class ExcluirLivros {
 
     private Acervo acervo;
 
+    // Criação do construtor
+    public ExcluirLivros(Acervo acervo) {
+        this.acervo = acervo;
+    }
+
 }
