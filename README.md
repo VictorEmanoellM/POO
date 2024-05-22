@@ -3,6 +3,6 @@ Grupo formado por
 - Hugo Henrique Vieira de Almeida - 35574160
 - Gabriel Alves de Oliveira Neto - 34668853
 - Josinaldo da Silva Sousa - 34673792
-- Victor Emanuel Marques - 
+- Victor Emanuel Marques - 34358692
 
 # Projeto de Um sistema para uma Biblioteca
