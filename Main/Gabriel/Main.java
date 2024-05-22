@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -25,6 +26,31 @@ public class Main {
             System.out.println("Email ou senha incorretos, Encerrando...");
             return;
         }
+        System.out.println("Bem vindo, " + currentUser.getNome() + "!");
 
-    }
+        Acervo acervo = new Acervo();
+        AdicionarLivros adicionarLivros = new AdicionarLivros(acervo);
+        ExcluirLivros ExcluirLivros = new ExcluirLivros(acervo);
+        ConsultarLivros consultarLivros = new ConsultarLivros(acervo);
+
+        System.out.println("Adicionar livros...");
+        Livro livro = new Livro("Java para Iniciantes", "Jonh Doe", "12345");
+        Livro livro = new Livro("Programação Avançada", "Jane Smith", "67890");
+        adicionarLivros.adicionarLivro(Livro1);
+        adicionarLivros.adicionarLivro(Livro2);
+
+        System.out.println("Consultando livros...");
+        List<Livro> livros = consultarLivros.consultarLivros();
+        for (Livro livro : livros) {
+            System.out.println(livro);
+        }
+
+        System.out.println("excluindo um livro...");
+        excluindoLivros.excluinLivros("12345"); 
+
+        System.out.println("Consultando Livros novamnete...");
+        livros = consultarLivros.consultarLivros();
+        for (Livro livro : livros) {
+            System.out.println(livro);
+        }
 }
