@@ -8,7 +8,7 @@ public class User {
         this.email = email;
         this. senha = senha;
     }
-}
+
 
     public String getNome() {
         return nome;
@@ -20,4 +20,13 @@ public class User {
 
     public boolean autenticar(String senha) {
         return this.senha.equals(senha);
+}
+
+@Override
+    public String toString() {
+        return "User{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
