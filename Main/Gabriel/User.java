@@ -3,12 +3,11 @@ public class User {
     private String email;
     private String senha;
 
-    public class User (String nome, String email, String senha){
+    public User(String nome, String email, String senha) {
         this.nome = nome;
         this.email = email;
-        this. senha = senha;
+        this.senha = senha;
     }
-
 
     public String getNome() {
         return nome;
@@ -20,9 +19,9 @@ public class User {
 
     public boolean autenticar(String senha) {
         return this.senha.equals(senha);
-}
+    }
 
-@Override
+    @Override
     public String toString() {
         return "User{" +
                 "nome='" + nome + '\'' +
